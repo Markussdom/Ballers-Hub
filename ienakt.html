@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballers Hub - Ienākt</title>
+</head>
+<body>
+    <header>
+        <img src="ballershub.png" alt="Ballers Hub Logo" class="logo">
+        <div class="nav-wrapper">
+            <nav>
+                <a href="index.html">Sākums</a>
+                <a href="#">Produkti</a>
+                <a href="galerija.html">Galerija</a>
+                <a href="#">Sūdzības</a>
+                <a href="#">Par mums</a>
+                <a href="#">Kontakti</a>
+            </nav>
+        </div>
+        <div class="icon-wrapper">
+            <div class="search-icon"></div>
+            <a href="ienakt.html" class="profile-link">
+                <div class="profile-icon"></div>
+            </a>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <h1>Ienākt</h1>
+        <form id="loginForm" class="login-form">
+            <label for="username">E-pasts</label>
+            <input type="text" id="username" name="username" placeholder="Ievadi E-pastu" required>
+
+            <label for="password">Parole</label>
+            <input type="password" id="password" name="password" placeholder="Ievadi paroli" required>
+
+            <div class="forgot-password">
+                <a href="#">Aizmirsi paroli?</a>
+            </div>
+
+            <button type="submit">Ienākt</button>
+
+            <div class="register-link">
+                <a href="#">Reģistrēties</a>
+            </div>
+        </form>
+
+        <!-- Message box for feedback -->
+        <div id="message"></div>
+    </main>
+
+    <footer style="position: fixed; bottom: 0; left: 0; padding: 10px;">
+        © Ballershub
+    </footer>
+    <body class="login-page">
+        <script src="ienakt.js" defer></script>
+</body>
+</html>
